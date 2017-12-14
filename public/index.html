@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../vendor/angular-ui-bootstrap/ui-bootstrap-csp.css"/>
+    <link rel="stylesheet" href="../css/jquery-ui.css"/>
+    <link rel="stylesheet" href="../css/intl-tel-input/intlTelInput.css"/>
+
+
+
+    <!--Anguler Core-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <!--Anguler Routing-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+    <script src="views/home/homeController.js"></script>
+
+
+
+
+
+</head>
+<!--<body ng-controller ="indexCtrl">-->
+<!--<div ng-view></div>-->
+<body ng-controller ="indexCtrl as indexCtrl" >
+<div ng-include="views/home/home.html"></div>
+
+
+</body>
+</html>

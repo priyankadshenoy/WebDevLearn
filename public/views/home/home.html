@@ -1,0 +1,11 @@
+<div ng-controller ="indexCtrl as indexCtrl" >
+    <select name="user"
+            ng-model="model.selecteduser"
+            class="form-control" required>
+        <option value="default">Add a language</option>
+        <option ng-repeat="user in model.users"
+                value="{{user.name}}">
+            {{user.name}}
+        </option>
+    </select>
+</div>
